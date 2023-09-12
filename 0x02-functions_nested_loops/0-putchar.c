@@ -1,13 +1,13 @@
 #include "main.h"
-	/**
-	 * main - Entry point 
-	 * is written by mbah
-	 * Return: 0;
-	 */
 
+/**
+ * main - Program that prints _putchar
+ * followed by a new line
+ * Return: 0 (Success)
+ */
 
-	int main(void)
-	{
+int main(void)
+{
 	_putchar('_');
 	_putchar('p');
 	_putchar('u');
@@ -18,5 +18,5 @@
 	_putchar('r');
 	_putchar('\n');
 	return (0);
-	}
+}
 
