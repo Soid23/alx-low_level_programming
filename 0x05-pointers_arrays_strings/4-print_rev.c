@@ -5,7 +5,7 @@
  *
  * @s : string to print
  */
-void print_rev(char *s);
+void print_rev(char *s)
 {
 	int i, k, len;
 
@@ -20,7 +20,7 @@ void print_rev(char *s);
 
 	for (k = len - 1; k >= 0; k--)
 	{
-		putchar(s[j]);
+		putchar(s[k]);
 	}
 
 	 putchar('\n');
