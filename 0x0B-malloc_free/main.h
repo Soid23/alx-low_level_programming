@@ -1,5 +1,7 @@
-#ifndef FILE_MAIN
-#define FILE_MAIN
+#ifndef MAIN_H
+#define MAIN_H
+#include <stdio.h>
+#include <stlib.h>
 
 char *create_array(unsigned int size, char c);
 char *_strdup(char *str);
@@ -9,5 +11,6 @@ void free_grid(int **grid, int height);
 char *argstostr(int ac, char **av);
 char **strtow(char *str);
 int _putchar(char c);
+void simple_print_buffer(char *buffer, unsigned int size);
 
 #endif
