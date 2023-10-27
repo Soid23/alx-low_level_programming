@@ -1,19 +1,13 @@
 #include "main.h"
 
 /**
- * get_bit - get the value of a bit at a given index
- * @n: number to evaluate
- * @index: index starting from 0, of the bit  to get
- * Return: Value of bit at index, or -1 if error
+ * get_endianness - checks if a machine is little or big endian
+ * Return: 0 for big, 1 for little
  */
-int get_bit(unsigned long int n, unsigned int index)
+int get_endianness(void)
 {
-	unsigned long int hold;
+    unsigned int i = 1;
+    char *c = (char *)&i;
 
-	if (index > 64)
-		return (-1);
-
-	hold = n >> index;
-
-	return (hold & 1);
+    return (*c);
 }
